@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xinqing">
+        <item>开心</item>
+        <item>失落 </item>
+        <item>苦逼</item>
+        <item>想人</item>
+        <item>滑稽</item>
+        <item>没心情</item>
+    </string-array>
+    <string-array name="tianqi">
+        <item>晴</item>
+        <item>阴 </item>
+        <item>多云</item>
+        <item>下雨</item>
+        <item>下雪</item>
+        <item>没天气</item>
+    </string-array>
+</resources>

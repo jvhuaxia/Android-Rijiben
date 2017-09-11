@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <TextView
+        android:gravity="center"
+        android:text="一个简单的日记本Demo 使用SQLite实现 兼容API19以上的Android设备\n有搜索 增加 删除 查看 编辑的功能\n点击右下方的圆形按钮添加\n右上方有搜索框 会从名字 内容 心情搜索\n点击左上方的标题可从搜索返回 显示所有条目\n下次不再显示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="关闭"
+        android:id="@+id/buttonClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="添加日记" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:hint="标题"
+        android:inputType="text" />
+
+    <EditText
+        android:textSize="15sp"
+        android:gravity="top|start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="内容"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextContent"
+        android:layout_below="@+id/spinnerTianqi"
+        android:layout_alignParentBottom="true" />
+
+    <Spinner
+        android:id="@+id/spinnerTianqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/tianqi"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:entries="@array/xinqing"
+        android:id="@+id/spinnerXinqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

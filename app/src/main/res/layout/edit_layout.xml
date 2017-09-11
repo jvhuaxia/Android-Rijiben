@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".EditActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:title="编辑"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:gravity="center"
+        android:text="标题:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewTitle"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/spinnerTianqi" />
+
+    <Spinner
+        android:id="@+id/spinnerXinqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/xinqing"
+        android:inputType="text"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="心情:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewXinqing"
+        android:layout_alignBaseline="@+id/spinnerXinqing"
+        android:layout_alignBottom="@+id/spinnerXinqing"
+        android:layout_toStartOf="@+id/spinnerXinqing" />
+
+    <TextView
+        android:text="天气:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTianqi"
+        android:layout_alignBaseline="@+id/spinnerTianqi"
+        android:layout_alignBottom="@+id/spinnerTianqi"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinnerTianqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/tianqi"
+        android:inputType="text"
+        android:layout_below="@+id/editTextName"
+        android:layout_toEndOf="@+id/textViewTianqi" />
+
+    <EditText
+        android:textSize="15sp"
+        android:gravity="top|start"
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="内容"
+        android:layout_below="@+id/spinnerXinqing"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        android:inputType="text"
+        android:layout_below="@+id/toolbar"
+        android:layout_toEndOf="@+id/textViewTitle" />
+</RelativeLayout>
